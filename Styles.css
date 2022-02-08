@@ -1,0 +1,679 @@
+﻿* {
+    direction: rtl;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+.Body{
+    background-size:100%;
+    background-attachment:fixed;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #AEBD93;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #353535;
+}
+
+#MainBody {
+    background-image: url(MainBack.jpg);
+}
+
+#HTABody {
+    background-image: url(HTArd.jpg);
+}
+
+#HBSBody {
+    background-image: url(HBSrd.jpg);
+}
+
+#MHBody {
+    background-image: url(MHrd.jpg);
+}
+
+#BJBody {
+    background-image: url(BJrd.jpg);
+}
+
+#MTABody {
+    background-image: url(MTArd.jpg);
+}
+
+#ISRBody {
+    background-image: url(ISRrd.png);
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+#formDivID {
+    background-color: #AEBD93;
+    width: 35%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 1px #E8E1EF;
+    padding: 15px;
+    border: solid;
+    border-color: #E8E1EF;
+    border-radius: 15px;
+    color: #353535;
+    direction: rtl;
+    text-align: right;
+}
+
+#formNote {
+    text-align: right;
+    padding-left: 15%;
+    padding-right: 20%;
+    color: darkred;
+}
+
+.formInput {
+    text-align: right;
+    padding-left: 15%;
+    padding-right: 20%;
+}
+
+::placeholder {
+    color: darkred;
+    text-align: right;
+}
+
+input {
+    background-color: #AEBD93;
+    border: none;
+    border-bottom: 2px solid #353535;
+}
+
+.textInput {
+    text-align: right;
+    padding-left: 15%;
+    padding-right: 20%;
+    width: 40%;
+}
+
+select {
+    background-color: #AEBD93;
+    border: none;
+    border-bottom: 2px solid #353535;
+    width: 60%;
+}
+
+option {
+    background-color: #AEBD93;
+    color: #353535;
+    border-radius: 15px;
+}
+
+textarea {
+    background-color: #AEBD93;
+    border: none;
+    border-bottom: 2px solid #353535;
+    width: 60%;
+    padding-left: 15%;
+    padding-right: 20%;
+    resize: none;
+}
+
+#submitButton, #resetButton {
+    background-color: #AEBD93;
+    border: none;
+    color: #353535;
+    text-decoration: underline;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.navBar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar a{
+    margin-right: 0.7%;
+    margin-left: 0.7%;
+    width:90px;
+    opacity:0.7;
+}
+
+#MaivLink, #FormLink{
+    margin-left:8%;
+}
+
+#MainLink {
+    float: left;
+    color: #353535;
+    background-color: #AEBD93;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarMain a:hover {
+    opacity: 1;
+    transition:0.5s;
+}
+
+#navBarMain a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#FormLink {
+    float: left;
+    color: #353535;
+    background-color: #AEBD93;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarForm a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#navBarForm a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#HTALink {
+    float: left;
+    color: white;
+    background-color: red;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarHTA a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#navBarHTA a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#HBSLink {
+    float: left;
+    color: red;
+    background-color: lightgrey;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarHBS a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#navBarHBS a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#MHLink {
+    float: left;
+    color: white;
+    background-color: green;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarMH a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#navBarMH a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#BJLink {
+    float: left;
+    color: yellow;
+    background-color: black;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarBJ a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#navBarBJ a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#MTALink {
+    float: left;
+    color: blue;
+    background-color: #dfe300;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarMTA a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#navBarMTA a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#ISRLink {
+    float: left;
+    color: white;
+    background-color: blue;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+#navBarISR a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#navBarISR a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3{
+    text-decoration:underline;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+#Mainall {
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 1px #E8E1EF;
+    padding: 15px;
+    border-radius: 15px;
+    color: #353535;
+    background-color: #AEBD93;
+    border: solid;
+    border-color: #E8E1EF;
+    font-size:16px;
+}
+
+#HTAall {
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 1px red;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#HBSall {
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 1px black;
+    padding: 15px;
+    background-color: lightgrey;
+    color: red;
+    border: solid;
+    border-color: red;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#BJall {
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 10px black;
+    padding: 15px;
+    background-color: black;
+    color: yellow;
+    border: solid;
+    border-color: yellow;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#MHall {
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 1px green;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#MTAall {
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 1px #dfe300;
+    padding: 15px;
+    background-color: #dfe300;
+    color: blue;
+    border: solid;
+    border-color: blue;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#ISRall {
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 25px 1px blue;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+    font-size: 16px;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+.keepButton {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+#bMain {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #AEBD93;
+    color: #353535;
+    text-decoration: underline;
+}
+
+#HTAkeep{
+    background-color:red;
+    color:white;
+    text-decoration: underline;
+}
+
+#HBSkeep {
+    background-color: lightgrey;
+    color: red;
+    text-decoration: underline;
+}
+
+#BJkeep {
+    background-color: black;
+    color: yellow;
+    text-decoration: underline;
+}
+
+#MHkeep {
+    background-color: green;
+    color: white;
+    text-decoration: underline;
+}
+
+#MTAkeep {
+    background-color: #dfe300;
+    color: blue;
+    text-decoration: underline;
+}
+
+#ISRkeep {
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.idLink {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#HTAidLink1, #HTAidLink2, #HTAidLink3 {
+    color: white;
+}
+
+#HBSidLink, #HBSidLink2, #HBSidLink3 {
+    color: red;
+}
+
+#BJidLink, #BJidLink2, #BJidLink3 {
+    color: yellow;
+}
+
+#MHidLink, #MHidLink2, #MHidLink3 {
+    color: white;
+}
+
+#MTAidLink1, #MTAidLink2, #MTAidLink3 {
+    color: blue;
+}
+
+#ISRidLink, #ISRidLink2 {
+    color: white;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+.hide {
+    display: none;
+}
+
+.images {
+    height: 270px;
+    width: 480px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+#HTAimage1 {
+    box-shadow: 0px 0px 25px 1px white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+#HTAimage1:hover + .hide {
+    display: block;
+}
+
+#HTAimage2 {
+    box-shadow: 0px 0px 25px 1px white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+#HTAimage2:hover + .hide {
+    display: block;
+}
+
+#HBSimage1 {
+    box-shadow: 0px 0px 25px 1px #191919;
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+#HBSimage1:hover + .hide {
+    display: block;
+}
+
+#HBSimage2 {
+    box-shadow: 0px 0px 25px 1px #191919;
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+#HBSimage2:hover + .hide {
+    display: block;
+}
+
+#BJimage1 {
+    box-shadow: 0px 0px 25px 1px yellow;
+    border: solid;
+    border-color: yellow;
+    border-radius: 15px;
+}
+
+#BJimage1:hover + .hide {
+    display: block;
+}
+
+#BJimage2 {
+    box-shadow: 0px 0px 25px 1px yellow;
+    border: solid;
+    border-color: yellow;
+    border-radius: 15px;
+}
+
+#BJimage2:hover + .hide {
+    display: block;
+}
+
+#MHimage1 {
+    box-shadow: 0px 0px 25px 1px white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+#MHimage1:hover + .hide {
+    display: block;
+}
+
+#MHimage2 {
+    box-shadow: 0px 0px 25px 1px white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+#MHimage2:hover + .hide {
+    display: block;
+}
+
+#MTAimage1 {
+    box-shadow: 0px 0px 25px 1px blue;
+    border: solid;
+    border-color: blue;
+    border-radius: 15px;
+}
+
+#MTAimage1:hover + .hide {
+    display: block;
+}
+
+#MTAimage2 {
+    box-shadow: 0px 0px 25px 1px blue;
+    border: solid;
+    border-color: blue;
+    border-radius: 15px;
+}
+
+#MTAimage2:hover + .hide {
+    display: block;
+}
+
+#ISRimage1 {
+    box-shadow: 0px 0px 25px 1px white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+#ISRimage1:hover + .hide {
+    display: block;
+}
+
+#ISRimage2 {
+    box-shadow: 0px 0px 25px 1px white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+#ISRimage2:hover + .hide {
+    display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.videos {
+    height: 270px;
+    width: 480px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+#HTAvideo:hover + .hide {
+    display: block;
+}
+
+#HBSvideo:hover + .hide {
+    display: block;
+}
+
+#MHvideo:hover + .hide {
+    display: block;
+}
+
+#BJvideo:hover + .hide {
+    display: block;
+}
+
+#MTAvideo:hover + .hide {
+    display: block;
+}

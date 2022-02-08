@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>טופס הרשמה</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="icon" href="SignPlogo.jpg" type="image/x-icon" />
+    <script>
+        function watchSoccer() {
+            watch.hidden = false;
+            notWatch.hidden = true;
+        }
+
+        function notWatchSoccer() {
+            watch.hidden = true;
+            notWatch.hidden = false;
+        }
+
+        function validateAll() {
+            if (name1.value.length < 2) {
+                alert("שם לא תקין");
+                return false;
+            }
+            else if (userNameID.value.length < 3) {
+                alert("שם משתמש לא תקין, נדרשות לפחות 3 אותיות.");
+                return false;
+            }
+            else if (pass1ID.value != pass2ID.value) {
+                alert("אימות סיסמא נכשל.");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body id="MainBody" class="Body">
+    <div id="navBarMain" class="navBar">
+        <a href="MainPage.html" id="MainLink">דף ראשי</a>
+        <a href="Form.html" class="active" id="FormLink">להרשמה</a>
+        <a href="HTA.html" id="HTALink">הפועל תל אביב</a>
+        <a href="HBS.html" id="HBSLink">הפועל באר-שבע</a>
+        <a href="MH.html" id="MHLink">מכבי חיפה</a>
+        <a href="BJ.html" id="BJLink">בית"ר ירושלים</a>
+        <a href="MTA.html" id="MTALink">מכבי תל אביב</a>
+        <a href="ISR.html" id="ISRLink">נבחרת ישראל</a>
+    </div>
+    <br /><br />
+    <div id="formDivID">
+        <h3>טופס הרשמה</h3>
+        <br />
+        <form id="formID" onsubmit="return validateAll()">
+            <div class="textInput">שם:<input type="text" id="name1" name="fName" placeholder="*" required /></div>
+            <br />
+            <br />
+            <div class="textInput">שם משפחה:<input type="text" name="sName" placeholder="*" required /></div>
+            <br />
+            <br />
+            <div class="textInput">
+                מגדר:<select name="gender">
+                    <option disabled selected>בחר</option>
+                    <option>זכר</option>
+                    <option>נקבה</option>
+                    <option>אחר</option>
+                </select>
+            </div>
+            <br />
+            <br />
+            <div class="textInput">אימייל:<input type="email" name="email" placeholder="*" required /></div>
+            <br />
+            <br />
+            <div class="textInput">מספר טלפון:<input type="tel" name="phoneNumber" /></div>
+            <br />
+            <br />
+            <div class="textInput">שם משתמש:<input type="text" id="userNameID" name="userName" placeholder="*" required /></div>
+            <br />
+            <br />
+            <div class="textInput">סיסמא:<input type="password" id="pass1ID" name="pass1" placeholder="*" required /></div>
+            <br />
+            <br />
+            <div class="textInput">אימות הסיסמא:<input type="password" id="pass2ID" name="pass2" placeholder="*" required /></div>
+            <br />
+            <br />
+            <div class="formInput">
+                האם אתה צופה במשחקי כדורגל?(חובה)
+
+                <input type="radio" name="watching" onclick="watchSoccer()" required />כן
+                <input type="radio" name="watching" onclick="notWatchSoccer()" required />לא
+            </div>
+            <br />
+            <div id="watch" class="textInput" hidden>
+                איזו קבוצה את/ה אוהד/ת?
+                <textarea name="favTeam"></textarea>
+            </div>
+            <div id="notWatch" class="textInput" hidden>
+                האם את/ה צופה בענף ספורט אחר? אם כן, מהו?
+                <textarea name="otherSport"></textarea>
+            </div>
+            <br />
+            <br />
+            <div id="formNote">הערה: שדות המסומנים ב-* הינם שדות חובה</div>
+            <br />
+            <button type="submit" id="submitButton">שלח</button>
+            <button type="reset" id="resetButton">איפוס</button>
+            <br /><br />
+        </form>
+    </div>
+</body>
+</html>
